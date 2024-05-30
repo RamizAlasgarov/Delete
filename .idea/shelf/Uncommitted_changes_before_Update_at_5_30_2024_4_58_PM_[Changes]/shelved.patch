@@ -1,0 +1,146 @@
+Index: src/main/java/Cinema/Dev.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Cinema;public class Dev {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Cinema/Dev.java b/src/main/java/Cinema/Dev.java
+--- a/src/main/java/Cinema/Dev.java	(revision 9bf350ddafab5d931589f3280129ba7515f1c8c4)
++++ b/src/main/java/Cinema/Dev.java	(date 1717080378208)
+@@ -1,2 +1,7 @@
+-package Cinema;public class Dev {
++package Cinema;
++
++public class Dev {
++    public static void main(String[] args) {
++
++    }
+ }
+Index: src/main/java/Cinema/readme.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Cinema/readme.md b/src/main/java/Cinema/readme.md
+new file mode 100644
+--- /dev/null	(date 1717080378219)
++++ b/src/main/java/Cinema/readme.md	(date 1717080378219)
+@@ -0,0 +1,29 @@
++### Техническое задание: "Система управления кинотеатром"
++
++#### Цель:
++Создать систему управления кинотеатром, которая включает в себя различные сущности, такие как фильмы, сеансы, пользователи и билеты. Система должна демонстрировать использование полиморфизма и интерфейсов.
++
++#### Описание задачи:
++1. **Фильмы**: Создать иерархию классов для фильмов с различными жанрами.
++2. **Сеансы**: Управление расписанием сеансов различных фильмов.
++3. **Пользователи**: Различные типы пользователей (администраторы и зрители) с соответствующими ролями и правами.
++4. **Билеты**: Продажа билетов на сеансы, отображение информации о билетах.
++
++#### Требования:
++1. **Интерфейсы и классы:**
++   - Создать интерфейс `Film` с методами для получения названия фильма и его жанра.
++   - Создать несколько классов, реализующих интерфейс `Film`, для разных жанров (например, `ActionFilm`, `ComedyFilm`, `DramaFilm`).
++   - Создать интерфейс `User` с методами для получения имени пользователя и его роли.
++   - Создать классы, реализующие интерфейс `User`, для разных типов пользователей (например, `AdminUser`, `ViewerUser`).
++   - Создать класс `Session`, представляющий сеанс, который содержит фильм, время и количество доступных билетов.
++   - Создать класс `Ticket`, представляющий билет, который содержит информацию о пользователе, сеансе и месте.
++
++2. **Полиморфизм:**
++   - Использовать полиморфизм для обработки различных типов фильмов и пользователей.
++   - Демонстрировать полиморфное поведение при работе с коллекциями фильмов и пользователей.
++
++3. **Функциональность:**
++   - Создание, редактирование и удаление сеансов (доступно только администраторам).
++   - Просмотр списка доступных сеансов и покупка билетов (доступно всем пользователям).
++   - Просмотр информации о купленных билетах.
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1f064d95-6129-4b94-85d4-5922026594c1\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2hBrVJM6Efde4F8HXL6kbejeGZQ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1f064d95-6129-4b94-85d4-5922026594c1\" name=\"Changes\" comment=\"\" />\r\n      <created>1717078335247</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1717078335247</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9bf350ddafab5d931589f3280129ba7515f1c8c4)
++++ b/.idea/workspace.xml	(date 1717080987687)
+@@ -4,15 +4,34 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1f064d95-6129-4b94-85d4-5922026594c1" name="Changes" comment="" />
++    <list default="true" id="1f064d95-6129-4b94-85d4-5922026594c1" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/src/main/java/Cinema/readme.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Cinema/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cinema/Dev.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="Ramiz_Example" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
+   <component name="MavenImportPreferences">
+     <option name="importingSettings">
+       <MavenImportingSettings>
+@@ -25,12 +44,19 @@
+   <component name="ProjectViewState">
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/ramiz/IdeaProjects/Delete/src/main/java/Cinema&quot;
+   }
+-}]]></component>
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\ramiz\IdeaProjects\Delete\src\main\java\Cinema" />
++    </key>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -42,4 +68,15 @@
+     </task>
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
