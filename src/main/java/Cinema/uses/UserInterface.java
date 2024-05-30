@@ -1,4 +1,4 @@
-package Cinema;
+package Cinema.uses;
 
 public interface UserInterface {
     public void getUserName();

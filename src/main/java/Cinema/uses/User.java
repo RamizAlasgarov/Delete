@@ -1,4 +1,4 @@
-package Cinema;
+package Cinema.uses;
 
 public class User implements UserInterface {
     private String name;

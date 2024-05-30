@@ -1,7 +1,7 @@
-package Cinema;
+package Cinema.uses;
 
-public class AdminUser extends User {
-    public AdminUser(String name, String role) {
+public class ViewerUser extends User implements UserInterface {
+    public ViewerUser(String name, String role) {
         super(name, role);
     }
 
