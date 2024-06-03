@@ -10,7 +10,7 @@ public class Session {
     private String movieTitle;
     private double sessionStartTime;
     private double sessionDuration;
-    private String contentFormat;
+    private String contentFormat; //тяни данные из справочника TicketFormatGuide
     private String movieGenre;
     private String country;
     private double ticketPrice;
@@ -23,7 +23,7 @@ public class Session {
         this.movieTitle = movieTitle;
         this.sessionStartTime = sessionEvent;
         this.sessionDuration = sessionDuration;
-        this.contentFormat = contentFormat;
+        this.contentFormat = contentFormat; //тяни данные из справочника TicketFormatGuide
         this.movieGenre = movieGenre;
         this.country = country;
         this.ticketPrice = ticketPrice;
